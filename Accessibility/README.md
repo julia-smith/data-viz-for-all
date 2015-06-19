@@ -1,1 +1,1 @@
-# Accessiblity Best Practices
+# Accessibility Best Practices
