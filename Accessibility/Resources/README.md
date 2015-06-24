@@ -2,6 +2,7 @@
 ## Tools:
 * [WAVE Evaluation Chome Plugin](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US) | WebAIM
 * [WAVE Evaluation Firefox Toolbar](https://addons.mozilla.org/En-us/firefox/addon/wave-toolbar/) | WebAIM
+
 ## Reading:
 * [Web Accessibility in Mind](http://webaim.org/) | WebAIM
 * [Web Content Accessibility Guidelines (WCAG) 2.0](http://www.w3.org/TR/WCAG20/) | W3C
