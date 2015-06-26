@@ -10,3 +10,6 @@
  * [ADA Section 508 Standards Guide](http://www.section508.gov/section-508-standards-guide) | U.S. Government
  * [7 Things Every Designer Needs to Know about Accessibility](https://medium.com/salesforce-ux/7-things-every-designer-needs-to-know-about-accessibility-64f105f0881b) | Jesse Hausler 
  * [Tips for Creating Accessible SVG](http://www.sitepoint.com/tips-accessible-svg/) | Léonie Watson 
+
+##Examples:
+ * Map with Screen Reader Support – [Where can you carry a concealed gun in public? (CIR)](http://s3-us-west-1.amazonaws.com/apps-cironline-org/concealed-carry/index.html)
