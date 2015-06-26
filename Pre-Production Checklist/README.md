@@ -69,7 +69,54 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 <hr>
 ##Alternative Selection Mechanisms:
 * If your graphic includes a custom way to access data, also provide a native control (select box, radio buttons, etc.) so your user can access the data in your interactive more easily via keyboard or their mobile device.
+
 ![Alternative Selection Example](images/selection-example.jpg)
+* In the above example, data embedded in the map is available both by hovering over a county *and* by using the select box to pick a county. This accomplishes two things:
+ * It makes the data accessible via keyboard.
+ * It allows geographicaly small counties (like San Francisco County) to be more easily selected on mobile devices.
+* The tricky part is keeping the two selection mechanisms (the map and the select box) in sync. 
+
+        function countySelect(){
+		  var select = document.getElementById("cir-map-select");
+		  select.onchange = function(){
+		    var value = select.value;
+		    updateSelectionInfo(value);
+		  }
+		}
+
+		function updateSelectionInfo(value){
+		  var info = document.getElementById("cir-map-info");
+		  if (value != "Select a county"){
+		    var svgCounty = document.getElementById(value);
+		    var dataCounty = svgCounty.getAttribute("data-name");
+		    var dataApproved = svgCounty.getAttribute("data-approved").toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		    var html = "<div class='info-inner'><span class='county-group'>" + dataApproved + " active permits</span></div>";
+		    info.innerHTML = html;
+		    updateSelectedPath(svgCounty);     
+		  } else {
+		    info.innerHTML = "";
+		    deselectPath();
+		  }
+		}
+
+		function updateSelectedPath(path){
+		  deselectPath();   
+		  if (path.getAttribute('data-selected') == 'true'){
+		    path.setAttribute('data-selected', 'false');
+		  } else {
+		    path.setAttribute('data-selected', 'true');
+		  } 
+		  path.setAttribute('data-selected', 'true');
+		  var parent = path.parentNode;
+		  parent.appendChild(path);
+		}
+
+		function deselectPath(){
+		  var selected = document.querySelector('.cir-county[data-selected="true"]');
+		  if (selected) {
+			  selected.setAttribute('data-selected', 'false');
+		  }
+		}
 
 <hr>
 ##Noscript Fallback:
