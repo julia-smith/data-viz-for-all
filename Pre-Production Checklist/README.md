@@ -203,7 +203,9 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 * For mobile especially (but also for keyboard navigation), display tooltip data on a fixed area of the screen.
 * Fixed data sections help prevent the user's fingers from getting in the way of the data.
 
+<p align="center">
 ![Fixed Data Section Example](images/fixed-data-section.jpg)
+</p>
 
 <hr>
 ##Table Accessibility:
