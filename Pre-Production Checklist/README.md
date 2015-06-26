@@ -1,18 +1,18 @@
 # Pre-Production Checklist
 * Is it [**responsive**](#responsive)?
-* Does is have special features for [**touch devices**](#touch)?
-* Are [**hit areas**](#hitareas) appropriately sized?
-* Is there a [**noscript fallback**](#noscript) for old browsers?
-* Is all information [**accessible via keyboard**](#keyboard)?
-* Are there [**visible states**](#states) for focus/hover/selected?
-* Are [**alternative selection mechanisms**](#selection) in place?
-* Is there a [**fallback for tooltips**](#tooltips)?
-* Are [**tables**](#tables) legible and accessible?
-* How did it perform on [**PageSpeed**](#pagespeed)?
-* Is it error-free on [**WAVE**](#wave)?
+* Does is have special features for [**touch devices**](#touch-support)?
+* Are [**hit areas**](#hit-areas) appropriately sized?
+* Is there a [**noscript fallback**](#noscript-fallback) for old browsers?
+* Is all information [**accessible via keyboard**](#keyboard-support)?
+* Are there [**visible states**](#visible-states) for focus/hover/selected?
+* Are [**alternative selection mechanisms**](#alternative-selection-mechanisms) in place?
+* Is there a [**fallback for tooltips**](#tooltip-alternative)?
+* Are [**tables**](#table-accessibility) legible and accessible?
+* How did it perform on [**PageSpeed**](#pagespeed-evaluation)?
+* Is it error-free on [**WAVE**](#wave-evaluation)?
 
 <hr />
-##<span id="responsive">Responsive:</span>
+##Responsive:
 * Test the graphic on as many devices as possible and make sure it flows appropriately and doesn't break out of the viewport.
 * Use the viewport meta tag. 
  * ```<meta name="viewport" content="width=device-width, initial-scale=1">```
@@ -23,32 +23,32 @@
 * More on RWD fundamentals: [Responsive Web Design Basics](https://developers.google.com/web/fundamentals/layouts/rwd-fundamentals/index?hl=en) | Google Developers
 
 <hr>
-##<span id="touch">Touch Support:</span>
+##Touch Support:
 
 <hr>
-##<span id="hitareas">Hit Areas:</span>
+##Hit Areas:
 
 <hr>
-##<span id="noscript">Noscript Fallback:</span>
+##Noscript Fallback:
 
 <hr>
-##<span id="keyboard">Keyboard Support:</span>
+##Keyboard Support:
 
 <hr>
-##<span id="states">Visible States:</span>
+##Visible States:
 
 <hr>
-##<span id="selection">Alternative Selection Mechanisms:</span>
+##Alternative Selection Mechanisms:
 
 <hr>
-##<span id="tooltips">Tooltip Alternative:</span>
+##Tooltip Alternative:
 
 <hr>
-##<span id="tables">Table Accessibility:</span>
+##Table Accessibility:
 
 <hr>
-##<span id="pagespeed">PageSpeed Evaluation:</span>
+##PageSpeed Evaluation:
 
 <hr>
-##<span id="wave">WAVE Evaluation:</span>
+##WAVE Evaluation:
 
