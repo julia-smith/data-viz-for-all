@@ -34,7 +34,24 @@
             var wrapper = document.getElementById('interactive-wrapper');
             wrapper.className += ' touch-device';
         }
-
+The above JS snippet tests for the user agent and, if it's a touch device, sets the variable ```touch``` to ```TRUE``` and adds the class ```touch-device``` to the interactive's container. This way you can write touch-only CSS like this:
+    
+        .touch-device circle {  
+          r: 23;
+          stroke-width: 8;
+        }
+    And JS like this:
+        if (!touch) {
+            map.addEventListener( 'mousemove', function(e) {
+              var left = e.offsetX===undefined?e.layerX+10:e.offsetX+10;
+              var top = e.offsetY===undefined?e.layerY+10:e.offsetY+10;
+              if (e.pageX > (window.innerWidth - 300)){
+                left = e.offsetX===undefined?e.layerX-tooltip.clientWidth:e.offsetX-tooltip.clientWidth;
+              }
+              tooltip.style.left = left + 'px';
+              tooltip.style.top = top + 'px';
+            });
+          }
 * More on designing for touch: [Fingers, thumbs, and people](http://interactions.acm.org/archive/view/may-june-2015/fingers-thumbs-and-people) | Steven Hoober
 
 <hr>
