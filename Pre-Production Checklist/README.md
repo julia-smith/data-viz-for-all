@@ -27,14 +27,14 @@
 <hr>
 ##Touch Support:
 * Some interactives may require specific enhancements for touch devices.
- * Example: Disable mouse events on a map and use a native control, like a select box, instead. ([How?](##alternative-selection-mechanisms))
+ * Example: Disable mouse events on a map and use a native control, like a select box, instead. ([How?](#alternative-selection-mechanisms))
 * To isolate UI elements and interactions for touch devices, test for mobile **user agent strings** and add a CSS class to the containing element. This way you can use touch-only CSS and JS selectors.
 
         var touch;
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-            touch = true;
-            var wrapper = document.getElementById('interactive-wrapper');
-            wrapper.className += ' touch-device';
+          touch = true;
+          var wrapper = document.getElementById('interactive-wrapper');
+          wrapper.className += ' touch-device';
         }
 The above JS snippet tests for the user agent and – if it's a touch device – sets the variable ```touch``` to ```TRUE``` and adds the class ```touch-device``` to the interactive's container. This way you can write touch-only CSS like below, which will increase the size of an SVG circle on touch devices:
     
@@ -114,36 +114,38 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 		function deselectPath(){
 		  var selected = document.querySelector('.cir-county[data-selected="true"]');
 		  if (selected) {
-			  selected.setAttribute('data-selected', 'false');
+			selected.setAttribute('data-selected', 'false');
 		  }
 		}
     
     Then the map paths also update the select box:
 
         elem.addEventListener( 'click', function(e) {
-            var countyID = e.target.id;
-            var select = document.getElementById("cir-map-select");           
-            if (e.target.getAttribute('data-selected') == 'true'){
-              select.value = "Select a county";
-              e.target = "";
-              countyID = "Select a county";
-            } else {
-              select.value = countyID;
-            }
-            updateSelectedPath(e.target);
-            updateSelectionInfo(countyID);
+          var countyID = e.target.id;
+          var select = document.getElementById("cir-map-select");           
+          if (e.target.getAttribute('data-selected') == 'true'){
+            select.value = "Select a county";
+            e.target = "";
+            countyID = "Select a county";
+          } else {
+            select.value = countyID;
+          }
+          updateSelectedPath(e.target);
+          updateSelectionInfo(countyID);
         }); 
 
 <hr>
 ##Incompatibility Fallbacks:
 * Provide feedback to users who turn off javascript:
 
-		<style>.compatibility-error { display:none; }</style>
+		<style>
+		  .compatibility-error {display:none;}
+		</style>
 	    
 	    <noscript>
 	      <style>
-	            .viz-container {display:none;}
-	            .compatibility-error {display:block;}
+	        .viz-container {display:none;}
+	        .compatibility-error {display:block;}
 	      </style>
 	    </noscript>
 	    <div class="compatibility-error">This interactive feature requires a modern browser with JavaScript enabled.</div>
@@ -152,7 +154,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 
         <!--[if lt IE 9]>
 	      <style>
-	            .county-selection-wrapper, #interactive-wrapper, .cir-map-legend, .credit {display:none;}
+	        .county-selection-wrapper, #interactive-wrapper, .cir-map-legend, .credit {display:none;}
 	      </style>
      	  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	    <![endif]-->
@@ -170,30 +172,38 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 * Include event listeners for ```focus```, ```blur```, and ```keydown``` in order to trigger interaction via keyboard events in JS.
         
 		$('#us-map circle').focus(function(){ 
-        	var $this = $(this);
-			getCircleData($this);
-			$('.map-info').css('display', 'block');
+       	  var $this = $(this);
+		  getCircleData($this);
+		  $('.map-info').css('display', 'block');
         });
 
         $('#us-map circle').blur(function(){ 
-        	$('.map-info').css('display', 'none');
+          $('.map-info').css('display', 'none');
         });
 
 		$('.cir-map-state').keydown(function(e){ 
-			var code = e.which;
-			// 13 = Return, 32 = Space
-			if ((code === 13) || (code === 32)) {
-				$(this).trigger('click');
-			}
+		  var code = e.which;
+		  // 13 = Return, 32 = Space
+		  if ((code === 13) || (code === 32)) {
+		  	$(this).trigger('click');
+		  }
 		});
 * More on keyboard support: [Keyboard Accessibility](http://webaim.org/techniques/keyboard/) | WebAIM
 
 <hr>
 ##Visible States:
+* Use a distinct, *visible* style for the different element states:
+ * default
+ * hover
+ * selected
+ * focus
 
 <hr>
 ##Tooltip Alternative:
 * For mobile especially (but also for keyboard navigation), display tooltip data on a fixed area of the screen.
+* Fixed data sections help prevent the user's fingers from getting in the way of the data.
+
+![Fixed Data Section Example](images/fixed-data-section.jpg)
 
 <hr>
 ##Table Accessibility:
