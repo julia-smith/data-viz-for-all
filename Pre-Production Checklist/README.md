@@ -3,7 +3,7 @@
 * Does is have special features for [**touch devices**](#touch-support)?
 * Are [**hit areas**](#hit-areas) appropriately sized?
 * Are [**alternative selection mechanisms**](#alternative-selection-mechanisms) in place?
-* Is there a [**noscript fallback**](#incompatibility-fallback) for old browsers?
+* Are there [**incompatibility fallbacks**](#incompatibility-fallbacks) for unsupported browsers?
 * Is all information [**accessible via keyboard**](#keyboard-support)?
 * Are there [**visible states**](#visible-states) for focus/hover/selected?
 * Is there a [**fallback for tooltips**](#tooltip-alternative)?
@@ -73,7 +73,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 ![Alternative Selection Example](images/selection-example.jpg)
 * In the above example, data embedded in the map is available both by hovering over a county *and* by using the select box to pick a county. This accomplishes two things:
  * It makes the data accessible via keyboard.
- * It allows geographicaly small counties (like San Francisco County) to be more easily selected on mobile devices.
+ * It allows geographicaly small areas (like San Francisco County) to be more easily selected on mobile devices.
 * The tricky part is keeping the two selection mechanisms (the map and the select box) in sync. Here are the functions that operate the select box:
 
         function countySelect(){
@@ -135,7 +135,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
         }); 
 
 <hr>
-##Incompatibility Fallback:
+##Incompatibility Fallbacks:
 * Provide feedback to users who turn off javascript:
 
 		<style>.compatibility-error { display:none; }</style>
@@ -147,7 +147,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 	      </style>
 	    </noscript>
 	    <div class="compatibility-error">This interactive feature requires a modern browser with JavaScript enabled.</div>
-	    
+
 * Provide feedback to users who use browsers you don't support:
 
         <!--[if lt IE 9]>
@@ -159,12 +159,41 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 
 <hr>
 ##Keyboard Support:
+* Test for keyboard support by tabbing through your UI to make sure important elements are focusable.
+* Test for screen reader support with a tool like [ChromeVox](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn), a screen reading browser extension for Chrome. This tool will let you hear information as you tab through an interface. Make sure data in your interactive is audible.
+* Use the ```tabindex``` attribute to give elements keyboard focus.
+
+        <div tabindex="0" role="button">focusable element</div>
+ * ```tabindex="0"``` will place the element in default navigation order. **0 is the value you should use most often.**
+ * ```tabindex="-1"``` will remove the elment from default navigation order but allow it to receive focus programmatically.
+ * ```tabindex="2"``` ...or 3, 4, 5, etc. will place elements in the specified order.
+* Include event listeners for ```focus```, ```blur```, and ```keydown``` in order to trigger interaction via keyboard events in JS.
+        
+		$('#us-map circle').focus(function(){ 
+        	var $this = $(this);
+			getCircleData($this);
+			$('.map-info').css('display', 'block');
+        });
+
+        $('#us-map circle').blur(function(){ 
+        	$('.map-info').css('display', 'none');
+        });
+
+		$('.cir-map-state').keydown(function(e){ 
+			var code = e.which;
+			// 13 = Return, 32 = Space
+			if ((code === 13) || (code === 32)) {
+				$(this).trigger('click');
+			}
+		});
+* More on keyboard support: [Keyboard Accessibility](http://webaim.org/techniques/keyboard/) | WebAIM
 
 <hr>
 ##Visible States:
 
 <hr>
 ##Tooltip Alternative:
+* For mobile especially (but also for keyboard navigation), display tooltip data on a fixed area of the screen.
 
 <hr>
 ##Table Accessibility:
