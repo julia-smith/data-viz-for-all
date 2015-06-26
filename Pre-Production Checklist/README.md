@@ -7,7 +7,7 @@
 * Is all information [**accessible via keyboard**](#keyboard-support)?
 * Are there [**visible states**](#visible-states) for focus/hover/selected?
 * Is there a [**fallback for tooltips**](#tooltip-alternative)?
-* Are [**tables**](#table-accessibility) legible and accessible?
+* Are tables legible and accessible?
 * How did it perform on [**PageSpeed**](#pagespeed-evaluation)?
 * Is it error-free on [**WAVE**](#wave-evaluation)?
 
@@ -192,7 +192,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 
 <hr>
 ##Visible States:
-* Use a distinct, *visible* style for the different element states:
+* Use *distinct, visible* styles for the different element states:
  * default
  * hover
  * selected
@@ -204,15 +204,14 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 * Fixed data sections help prevent the user's fingers from getting in the way of the data.
 
 <p align="center">
-![Fixed Data Section Example](images/fixed-data-section.jpg)
+<img src="images/fixed-data-section.jpg" alt="fixed tooltip example" />
 </p>
 
 <hr>
-##Table Accessibility:
-
-<hr>
 ##PageSpeed Evaluation:
+* Run your graphic through [WebPageTest](http://www.webpagetest.org/) and/or [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
+* More performance resources: [Links!](https://docs.google.com/presentation/d/1tBcVjf0qnxnsE8K9h_dn7rAckRQUfi3Blu3wlUBt3Ws/edit) | Julia Smith
 
 <hr>
 ##WAVE Evaluation:
-
+* Use the [WAVE Evaluation Chome Plugin](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US) or [WAVE Evaluation Firefox Toolbar](https://addons.mozilla.org/En-us/firefox/addon/wave-toolbar/) to make sure you didn't overlook any accessibility issues.
