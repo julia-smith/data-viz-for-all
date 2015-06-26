@@ -53,20 +53,23 @@ The above JS snippet tests for the user agent and – if it's a touch device –
             tooltip.style.display = 'none';
           });
         } 
-* More on designing for touch: [Fingers, thumbs, and people](http://interactions.acm.org/archive/view/may-june-2015/fingers-thumbs-and-people) | Steven Hoober; [Finger-Friendly Design](http://www.smashingmagazine.com/2012/02/21/finger-friendly-design-ideal-mobile-touchscreen-target-sizes/) | Smashing Magazine
+* More on designing for touch: [Fingers, thumbs, and people](http://interactions.acm.org/archive/view/may-june-2015/fingers-thumbs-and-people) | Steven Hoober
 
 <hr>
 ##Hit Areas:
 * Tap targets should be large enough to touch on mobile – at least 30x30 pixels or so.
 * Links and tap targets should be spaced appropriately so users won't accidentally hit the wrong link.
-* Use media queries to make the necessary adjustments to your design.
-* For some graphics (like SVG maps) that are scaled down by device width, hit areas will become too small on certain devices. To compensate, consider:
- * Providing a different means to access the data (see [Alternative Selection Mechanisms](#alternative-selection-mechanism) below)
- * **Don't disable pinch-zoom!** Ensure your users can zoom in on a desired area of your graphic
+* Use media queries to make the necessary adjustments to your design. (See [Responsive](#responsive) above.)
+* For some graphics (like SVG maps) that are scaled down by device width, hit areas will become too small on certain devices. To compensate:
+ * Provide a different means to access the data. (See [Alternative Selection Mechanisms](#alternative-selection-mechanism) below.)
+ * **Don't disable pinch-zoom!** Ensure your users can zoom in on a desired area of your graphic.
+* Lively discussion on pinch-zoom: [Disabling Pinch Zoom on Mobile Web](http://stackoverflow.com/questions/11689353/disable-pinch-zoom-on-mobile-web) | StackOverflow
 * More on hit areas: [Finger-Friendly Design](http://www.smashingmagazine.com/2012/02/21/finger-friendly-design-ideal-mobile-touchscreen-target-sizes/) | Smashing Magazine
 
 <hr>
 ##Alternative Selection Mechanisms:
+* If your graphic includes a custom way to access data, also provide a native control (select box, radio buttons, etc.) so your user can access the data in your interactive more easily via keyboard or their mobile device.
+![Alternative Selection Example](images/selection-example.jpg)
 
 <hr>
 ##Noscript Fallback:
