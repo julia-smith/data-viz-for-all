@@ -3,7 +3,7 @@
 * Does is have special features for [**touch devices**](#touch-support)?
 * Are [**hit areas**](#hit-areas) appropriately sized?
 * Are [**alternative selection mechanisms**](#alternative-selection-mechanisms) in place?
-* Is there a [**noscript fallback**](#noscript-fallback) for old browsers?
+* Is there a [**noscript fallback**](#incompatibility-fallback) for old browsers?
 * Is all information [**accessible via keyboard**](#keyboard-support)?
 * Are there [**visible states**](#visible-states) for focus/hover/selected?
 * Is there a [**fallback for tooltips**](#tooltip-alternative)?
@@ -133,8 +133,29 @@ The above JS snippet tests for the user agent and – if it's a touch device –
             updateSelectedPath(e.target);
             updateSelectionInfo(countyID);
         }); 
+
 <hr>
-##Noscript Fallback:
+##Incompatibility Fallback:
+* Provide feedback to users who turn off javascript:
+
+		<style>.compatibility-error { display:none; }</style>
+	    
+	    <noscript>
+	      <style>
+	            .viz-container {display:none;}
+	            .compatibility-error {display:block;}
+	      </style>
+	    </noscript>
+	    <div class="compatibility-error">This interactive feature requires a modern browser with JavaScript enabled.</div>
+	    
+* Provide feedback to users who use browsers you don't support:
+
+        <!--[if lt IE 9]>
+	      <style>
+	            .county-selection-wrapper, #interactive-wrapper, .cir-map-legend, .credit {display:none;}
+	      </style>
+     	  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	    <![endif]-->
 
 <hr>
 ##Keyboard Support:
