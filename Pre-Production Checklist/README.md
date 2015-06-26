@@ -74,7 +74,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 * In the above example, data embedded in the map is available both by hovering over a county *and* by using the select box to pick a county. This accomplishes two things:
  * It makes the data accessible via keyboard.
  * It allows geographicaly small counties (like San Francisco County) to be more easily selected on mobile devices.
-* The tricky part is keeping the two selection mechanisms (the map and the select box) in sync. 
+* The tricky part is keeping the two selection mechanisms (the map and the select box) in sync. Here are the functions that operate the select box:
 
         function countySelect(){
 		  var select = document.getElementById("cir-map-select");
@@ -117,7 +117,22 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 			  selected.setAttribute('data-selected', 'false');
 		  }
 		}
+    
+    Then the map paths also update the select box:
 
+        elem.addEventListener( 'click', function(e) {
+            var countyID = e.target.id;
+            var select = document.getElementById("cir-map-select");           
+            if (e.target.getAttribute('data-selected') == 'true'){
+              select.value = "Select a county";
+              e.target = "";
+              countyID = "Select a county";
+            } else {
+              select.value = countyID;
+            }
+            updateSelectedPath(e.target);
+            updateSelectionInfo(countyID);
+        }); 
 <hr>
 ##Noscript Fallback:
 
