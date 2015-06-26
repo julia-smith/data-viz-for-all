@@ -24,6 +24,18 @@
 
 <hr>
 ##Touch Support:
+* Some interactives may require specific enhancements for touch devices.
+ * Example: Disable hover/click events on a map in favor of a native control like a select box.
+* To isolate UI elements and interactions for touch devices, test for mobile **user agent strings** and add a CSS class to the containing element. This way you can use touch-only CSS and JS selectors.
+
+        var touch;
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            touch = true;
+            var wrapper = document.getElementById('interactive-wrapper');
+            wrapper.className += ' touch-device';
+        }
+
+* More on designing for touch: [Fingers, thumbs, and people](http://interactions.acm.org/archive/view/may-june-2015/fingers-thumbs-and-people) | Steven Hoober
 
 <hr>
 ##Hit Areas:
