@@ -41,6 +41,7 @@ The above JS snippet tests for the user agent and, if it's a touch device, sets 
           stroke-width: 8;
         }
     And JS like this:
+    
         if (!touch) {
             map.addEventListener( 'mousemove', function(e) {
               var left = e.offsetX===undefined?e.layerX+10:e.offsetX+10;
