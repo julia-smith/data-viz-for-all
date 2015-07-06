@@ -4,6 +4,7 @@
  * [WAVE Evaluation Chome Plugin](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US) | WebAIM
  * [WAVE Evaluation Firefox Toolbar](https://addons.mozilla.org/En-us/firefox/addon/wave-toolbar/) | WebAIM
  * [ChromeVox Screen Reader Chrome Extension](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn) | Google
+ * [Tota11y – an accessibility visualization toolkit](http://khan.github.io/tota11y/) | Khan Academy
 * Reading:
  * [Web Accessibility in Mind](http://webaim.org/) | WebAIM
  * [Web Content Accessibility Guidelines (WCAG) 2.0](http://www.w3.org/TR/WCAG20/) | W3C
