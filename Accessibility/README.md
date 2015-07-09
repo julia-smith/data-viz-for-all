@@ -9,9 +9,11 @@
  * [Web Accessibility in Mind](http://webaim.org/) | WebAIM
  * [Web Content Accessibility Guidelines (WCAG) 2.0](http://www.w3.org/TR/WCAG20/) | W3C
  * [ADA Section 508 Standards Guide](http://www.section508.gov/section-508-standards-guide) | U.S. Government
- * [7 Things Every Designer Needs to Know about Accessibility](https://medium.com/salesforce-ux/7-things-every-designer-needs-to-know-about-accessibility-64f105f0881b) | Jesse Hausler 
+ * [7 Things Every Designer Needs to Know about Accessibility](https://medium.com/salesforce-ux/7-things-every-designer-needs-to-know-about-accessibility-64f105f0881b) | Jesse 
+ * [The Accessibility Cheat Sheet](http://bitsofco.de/2015/the-accessibility-cheatsheet/) | bitsofco.de
+ * [A More Accessible Multi-level Dropdown Navigation](http://bitsofco.de/2015/accessible-multi-level-dropdown-navigation/) | bitsofco.de
+ Hausler 
  * [Tips for Creating Accessible SVG](http://www.sitepoint.com/tips-accessible-svg/) | Léonie Watson 
 
 ##Examples:
- * Drop-Down Menus - [A MORE ACCESSIBLE MULTI-LEVEL DROPDOWN NAVIGATION (bitsofco.de)](http://bitsofco.de/2015/accessible-multi-level-dropdown-navigation/)
  * Map with Screen Reader Support – [Where can you carry a concealed gun in public? (CIR)](http://s3-us-west-1.amazonaws.com/apps-cironline-org/concealed-carry/index.html)
