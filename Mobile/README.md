@@ -13,5 +13,6 @@
  * [Mobile-Friendy Test](https://www.google.com/webmasters/tools/mobile-friendly/) | Google Developers
  * [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) | Google Developers
 * Reading:
- * [Pttrns](http://pttrns.com/) | Beyond Labs, Inc.
+ * [Mobile Web Best Practices](http://mobilewebbestpractices.com/) | Brad Frost
  * [MobileVis Best Practices](http://patterns.mobilev.is/) | Irene Ros
+ * [Pttrns](http://pttrns.com/) | Beyond Labs, Inc.
