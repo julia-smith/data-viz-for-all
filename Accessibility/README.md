@@ -5,6 +5,7 @@
  * [WAVE Evaluation Firefox Toolbar](https://addons.mozilla.org/En-us/firefox/addon/wave-toolbar/) | WebAIM
  * [ChromeVox Screen Reader Chrome Extension](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn) | Google
  * [Tota11y – an accessibility visualization toolkit](http://khan.github.io/tota11y/) | Khan Academy
+ * [Sim Daltonism – color blindness simulator for Mac](https://michelf.ca/projects/sim-daltonism/) | Michel Fortin
 * Reading:
  * [Web Accessibility in Mind](http://webaim.org/) | WebAIM
  * [Web Content Accessibility Guidelines (WCAG) 2.0](http://www.w3.org/TR/WCAG20/) | W3C
