@@ -220,7 +220,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 <hr>
 ##Colors:
 * Use a color blindness simulator such as [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/) for Mac or one of the many browser plugins to check for color blindness. Color combinations such as red and green should be avoided.
-* Check to ensure contrast between colors is high enough using a [color contrast checker](http://webaim.org/resources/contrastchecker/)
+* Check to ensure contrast between colors is high enough using a [color contrast checker](http://webaim.org/resources/contrastchecker/).
 
 <hr>
 
