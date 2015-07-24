@@ -10,6 +10,7 @@
 * Are tables legible and accessible?
 * How did it perform on [**PageSpeed**](#pagespeed-evaluation)?
 * Is it error-free on [**WAVE**](#wave-evaluation)?
+* Are the colors [**color blind safe**](#colors)? Is there enough contrast?
 
 <hr />
 ##Responsive:
@@ -215,3 +216,11 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 <hr>
 ##WAVE Evaluation:
 * Use the [WAVE Evaluation Chome Plugin](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US) or [WAVE Evaluation Firefox Toolbar](https://addons.mozilla.org/En-us/firefox/addon/wave-toolbar/) to make sure you didn't overlook any accessibility issues.
+
+<hr>
+##Colors:
+* Use a color blindness simulator such as [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/) for Mac or one of the many browser plugins to check for color blindness. Color combinations such as red and green should be avoided.
+* Check to ensure contrast between colors is high enough using a [color contrast checker](http://webaim.org/resources/contrastchecker/)
+
+<hr>
+
