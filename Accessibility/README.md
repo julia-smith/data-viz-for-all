@@ -12,6 +12,7 @@
 * Reading:
  * [Web Accessibility in Mind](http://webaim.org/) | WebAIM
  * [Web Content Accessibility Guidelines (WCAG) 2.0](http://www.w3.org/TR/WCAG20/) | W3C
+ * [A11y Project](http://a11yproject.com/) | The Accessibility Project
  * [ADA Section 508 Standards Guide](http://www.section508.gov/section-508-standards-guide) | U.S. Government
  * [7 Things Every Designer Needs to Know about Accessibility](https://medium.com/salesforce-ux/7-things-every-designer-needs-to-know-about-accessibility-64f105f0881b) | Jesse 
  * [The Accessibility Cheat Sheet](http://bitsofco.de/2015/the-accessibility-cheatsheet/) | bitsofco.de
