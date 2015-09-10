@@ -8,6 +8,7 @@
  * [Sim Daltonism – color blindness simulator for Mac](https://michelf.ca/projects/sim-daltonism/) | Michel Fortin
  * [Color Oracle - multi-platform color blindness simulator](http://colororacle.org/) | Bernhard Jenny
  * [Color Contrast Checker](http://webaim.org/resources/contrastchecker/) | WebAIM
+ * [Developing for Accessibility](http://www.google.com/accessibility/for-developers.html#chrome) | Google
 
 * Reading:
  * [Web Accessibility in Mind](http://webaim.org/) | WebAIM
