@@ -11,6 +11,6 @@ Let’s brainstorm some best practices for building better interactives. How can
 * [Accessibility Best Practices](Accessibility)
 
 ##Related Stuff:
-* [SRCCON DVfA Etherpad](https://etherpad.mozilla.org/srccon2015-mobile-dataviz) – full of ideas! (archived)
+* [SRCCON DVfA Etherpad](https://etherpad.mozilla.org/srccon2015-mobile-dataviz) (archived) – full of ideas!
  * Live pad migrated [here](https://public.etherpad-mozilla.org/p/srccon2015-mobile-dataviz)
 * [DVfA Components Repo](https://github.com/julia67/dvfa-components) – workspace for developing UI components
