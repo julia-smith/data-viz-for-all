@@ -25,4 +25,5 @@
 
 
 ##Examples:
- * Map with Screen Reader Support – [Where can you carry a concealed gun in public? (CIR)](http://s3-us-west-1.amazonaws.com/apps-cironline-org/concealed-carry/index.html)
+ * Fully accessible cross-browser HTML5 media player – [Able Player](http://ableplayer.github.io/ableplayer/)
+ * Map with screen reader support – [Where can you carry a concealed gun in public? (CIR)](http://s3-us-west-1.amazonaws.com/apps-cironline-org/concealed-carry/index.html)
