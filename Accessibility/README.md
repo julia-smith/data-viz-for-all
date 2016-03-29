@@ -12,6 +12,7 @@
  * [Developing for Accessibility](http://www.google.com/accessibility/for-developers.html#chrome) | Google
 
 * Reading:
+ * [Best Practices for Building an Accessible Website](https://18f.gsa.gov/2016/03/29/best-practices-for-building-an-accessible-website-using-the-draft-us-web-design-standards/) | 18F 
  * [Web Accessibility in Mind](http://webaim.org/) | WebAIM
  * [Web Content Accessibility Guidelines (WCAG) 2.0](http://www.w3.org/TR/WCAG20/) | W3C
  * [A11Y Project](http://a11yproject.com/) | The Accessibility Project
