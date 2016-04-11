@@ -24,6 +24,7 @@
  * [Tips for Creating Accessible SVG](http://www.sitepoint.com/tips-accessible-svg/) | Léonie Watson 
  * [The Subtleties of Color](http://earthobservatory.nasa.gov/blogs/elegantfigures/2013/08/05/subtleties-of-color-part-1-of-6/) | Rob Simmon
  * [Mastering Multi-hued Color Scales with Chroma.js](https://vis4.net/blog/posts/mastering-multi-hued-color-scales/) | Gregor Aisch
+ * [Make your icons awesome for all of your users](https://fortawesome.github.io/Font-Awesome/accessibility/) | Font Awesome
 
 
 ##Examples:
