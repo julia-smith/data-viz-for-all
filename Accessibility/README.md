@@ -1,6 +1,6 @@
 # Accessibility Best Practices
-##Resources:
-* Tools:
+## Resources:
+Tools:
  * [WAVE Evaluation Chome Plugin](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US) | WebAIM
  * [WAVE Evaluation Firefox Toolbar](https://addons.mozilla.org/En-us/firefox/addon/wave-toolbar/) | WebAIM
  * [ChromeVox Screen Reader Chrome Extension](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn) | Google
@@ -12,7 +12,7 @@
  * [Contrast-A – find accessible color combinations](http://www.dasplankton.de/ContrastA/) | Annika Hamann
  * [Developing for Accessibility](http://www.google.com/accessibility/for-developers.html#chrome) | Google
 
-* Reading:
+Reading:
  * [Best Practices for Building an Accessible Website](https://18f.gsa.gov/2016/03/29/best-practices-for-building-an-accessible-website-using-the-draft-us-web-design-standards/) | 18F 
  * [Web Accessibility in Mind](http://webaim.org/) | WebAIM
  * [Web Content Accessibility Guidelines (WCAG) 2.0](http://www.w3.org/TR/WCAG20/) | W3C
@@ -27,6 +27,6 @@
  * [Make your icons awesome for all of your users](https://fortawesome.github.io/Font-Awesome/accessibility/) | Font Awesome
 
 
-##Examples:
+## Examples:
  * Fully accessible cross-browser HTML5 media player – [Able Player](http://ableplayer.github.io/ableplayer/)
  * Map with screen reader support – [Where can you carry a concealed gun in public? (CIR)](http://s3-us-west-1.amazonaws.com/apps-cironline-org/concealed-carry/index.html)
