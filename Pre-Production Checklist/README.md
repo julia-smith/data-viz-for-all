@@ -13,7 +13,7 @@
 * Are the colors [**color blind safe**](#colors)? Is there enough contrast?
 
 <hr />
-## Responsive:
+<b id="responsive">Responsive:</b>
 
 * Test the graphic on as many devices as possible and make sure it flows appropriately and doesn't break out of the viewport.
 * Use the viewport meta tag in your HTML. 
@@ -27,7 +27,7 @@
 * More on RWD fundamentals: [Responsive Web Design Basics](https://developers.google.com/web/fundamentals/layouts/rwd-fundamentals/index?hl=en) | Google Developers
 
 <hr>
-## Touch Support:
+<b id="touch-support">Touch Support:</b>
 
 * Some interactives may require specific enhancements for touch devices.
  * Example: Disable mouse events on a map and use a native control, like a select box, instead. ([How?](#alternative-selection-mechanisms))
@@ -59,7 +59,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 * More on designing for touch: [Fingers, thumbs, and people](http://interactions.acm.org/archive/view/may-june-2015/fingers-thumbs-and-people) | Steven Hoober
 
 <hr>
-## Hit Areas:
+<b id="hit-areas">Hit Areas:</b>
 
 * Tap targets should be large enough to touch on mobile – at least 30x30 pixels or so.
 * Links and tap targets should be spaced appropriately so users won't accidentally hit the wrong link.
@@ -71,7 +71,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 * More on hit areas: [Finger-Friendly Design](http://www.smashingmagazine.com/2012/02/21/finger-friendly-design-ideal-mobile-touchscreen-target-sizes/) | Smashing Magazine
 
 <hr>
-## Alternative Selection Mechanisms:
+<b id="alternative-selection-mechanisms">Alternative Selection Mechanisms:</b>
 
 * If your graphic includes a custom way to access data, also provide a native control (select box, radio buttons, etc.) so your user can access the data in your interactive more easily via keyboard or their mobile device.
 
@@ -140,7 +140,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
         }); 
 
 <hr>
-## Incompatibility Fallbacks:
+<b id="incompatibility-fallbacks">Incompatibility Fallbacks:</b>
 
 * Provide feedback to users who turn off javascript:
 
@@ -166,7 +166,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 	    <![endif]-->
 
 <hr>
-## Keyboard Support:
+<b id="keyboard-support">Keyboard Support:</b>
 
 * Test for keyboard support by tabbing through your UI to make sure important elements are focusable.
 * Test for screen reader support with a tool like [ChromeVox](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn), a screen reading browser extension for Chrome. This tool will let you hear information as you tab through an interface. Make sure data in your interactive is audible.
@@ -198,7 +198,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 * More on keyboard support: [Keyboard Accessibility](http://webaim.org/techniques/keyboard/) | WebAIM
 
 <hr>
-## Visible States:
+<b id="visible-states">Visible States:</b>
 
 * Use *distinct, visible* styles for the different element states:
  * default
@@ -207,7 +207,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
  * focus
 
 <hr>
-## Tooltip Alternative:
+<b id="tooltip-alternative">Tooltip Alternative:</b>
 
 * For mobile especially (but also for keyboard navigation), display tooltip data on a fixed area of the screen.
 * Fixed data sections help prevent the user's fingers from getting in the way of the data.
@@ -217,18 +217,18 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 </p>
 
 <hr>
-## PageSpeed Evaluation:
+<b id="pagespeed-evaluation">PageSpeed Evaluation:</b>
 
 * Run your graphic through [WebPageTest](http://www.webpagetest.org/) and/or [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
 * More performance resources: [Links!](https://docs.google.com/presentation/d/1tBcVjf0qnxnsE8K9h_dn7rAckRQUfi3Blu3wlUBt3Ws/edit) | Julia Smith
 
 <hr>
-## WAVE Evaluation:
+<b id="wave-evaluation">WAVE Evaluation:</b>
 
 * Use the [WAVE Evaluation Chome Plugin](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US) or [WAVE Evaluation Firefox Toolbar](https://addons.mozilla.org/En-us/firefox/addon/wave-toolbar/) to make sure you didn't overlook any accessibility issues.
 
 <hr>
-## Colors:
+<b id="colors">Colors:</b>
 
 * Use a color blindness simulator such as [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/) for Mac or one of the many browser plugins to check for color blindness. Color combinations such as red and green should be avoided.
 * Check to ensure contrast between colors is high enough using a [color contrast checker](http://webaim.org/resources/contrastchecker/).
