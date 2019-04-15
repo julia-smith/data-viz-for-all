@@ -14,6 +14,7 @@
 
 <hr />
 ## Responsive:
+
 * Test the graphic on as many devices as possible and make sure it flows appropriately and doesn't break out of the viewport.
 * Use the viewport meta tag in your HTML. 
 
@@ -27,6 +28,7 @@
 
 <hr>
 ## Touch Support:
+
 * Some interactives may require specific enhancements for touch devices.
  * Example: Disable mouse events on a map and use a native control, like a select box, instead. ([How?](#alternative-selection-mechanisms))
 * To isolate UI elements and interactions for touch devices, test for mobile **user agent strings** and add a CSS class to the containing element. This way you can use touch-only CSS and JS selectors.
@@ -58,6 +60,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 
 <hr>
 ## Hit Areas:
+
 * Tap targets should be large enough to touch on mobile – at least 30x30 pixels or so.
 * Links and tap targets should be spaced appropriately so users won't accidentally hit the wrong link.
 * Use media queries to make the necessary adjustments to your design. (See [Responsive](#responsive) above.)
@@ -69,6 +72,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 
 <hr>
 ## Alternative Selection Mechanisms:
+
 * If your graphic includes a custom way to access data, also provide a native control (select box, radio buttons, etc.) so your user can access the data in your interactive more easily via keyboard or their mobile device.
 
 ![Alternative Selection Example](images/selection-example.jpg)
@@ -137,6 +141,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 
 <hr>
 ## Incompatibility Fallbacks:
+
 * Provide feedback to users who turn off javascript:
 
 		<style>
@@ -162,6 +167,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 
 <hr>
 ## Keyboard Support:
+
 * Test for keyboard support by tabbing through your UI to make sure important elements are focusable.
 * Test for screen reader support with a tool like [ChromeVox](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn), a screen reading browser extension for Chrome. This tool will let you hear information as you tab through an interface. Make sure data in your interactive is audible.
 * Use the ```tabindex``` attribute to give elements keyboard focus.
@@ -193,6 +199,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 
 <hr>
 ## Visible States:
+
 * Use *distinct, visible* styles for the different element states:
  * default
  * hover
@@ -201,6 +208,7 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 
 <hr>
 ## Tooltip Alternative:
+
 * For mobile especially (but also for keyboard navigation), display tooltip data on a fixed area of the screen.
 * Fixed data sections help prevent the user's fingers from getting in the way of the data.
 
@@ -210,15 +218,18 @@ The above JS snippet tests for the user agent and – if it's a touch device –
 
 <hr>
 ## PageSpeed Evaluation:
+
 * Run your graphic through [WebPageTest](http://www.webpagetest.org/) and/or [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
 * More performance resources: [Links!](https://docs.google.com/presentation/d/1tBcVjf0qnxnsE8K9h_dn7rAckRQUfi3Blu3wlUBt3Ws/edit) | Julia Smith
 
 <hr>
 ## WAVE Evaluation:
+
 * Use the [WAVE Evaluation Chome Plugin](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US) or [WAVE Evaluation Firefox Toolbar](https://addons.mozilla.org/En-us/firefox/addon/wave-toolbar/) to make sure you didn't overlook any accessibility issues.
 
 <hr>
 ## Colors:
+
 * Use a color blindness simulator such as [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/) for Mac or one of the many browser plugins to check for color blindness. Color combinations such as red and green should be avoided.
 * Check to ensure contrast between colors is high enough using a [color contrast checker](http://webaim.org/resources/contrastchecker/).
 
